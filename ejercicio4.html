@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">ias
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var fecha= prompt("ingrese la cantidad de días");
+    var totaldias= parseInt(fecha);
+    var semanas;
+
+    var aos= Math.floor(totaldias/365);
+    var resto_aos=(totaldias%365);
+
+    if (aos > 0){
+        console.log("son ", aos, "años");
+
+    }
+    
+    semanas= Math.floor(resto_aos/7);
+    resto_semanas= (resto_aos%7);
+
+        //mas de un yyyy
+    if (resto_semanas >0 ){
+            
+            console.log((semanas), "semanas" );
+    }
+    console.log( resto_semanas, "dias");
+
+    </script>
+</body>
+</html>
